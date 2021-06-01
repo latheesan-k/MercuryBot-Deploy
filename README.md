@@ -4,7 +4,7 @@ Instructions for Ubuntu. You must **copy & paste the entire command blocks** bel
 
 ### 1) VPS Preparation
 
-For obvious security reason, you should run this application as `root` user. Setup an unprivileaged user account with sudo access using the following command:
+For obvious security reason, you should NOT run this application as `root` user. Setup an unprivileaged user account with sudo access using the following command:
 
 ```shell
 adduser --disabled-password --gecos '' mercury && \
