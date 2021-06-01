@@ -63,11 +63,11 @@ Execute the following command to boot up the application:
 make up
 ```
 
-Mercury bot will be running on: https://your-server-ip
+MercuryBot will be running on: https://your-server-ip
 
 ### 5) Available Make Commands
 
-* `up` Turn on the application
+* `up` Turn on / restart the application
 * `down` Turn off the application
 * `upgrade` Download the latest version & restart the application
 * `status` View the status of the running application
