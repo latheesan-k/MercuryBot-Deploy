@@ -65,6 +65,20 @@ make up
 
 MercuryBot will be running on: https://your-server-ip
 
+Verify the application running correctly using the following `curl` command:
+
+```shell
+curl --insecure --location --request GET 'https://your-server-ip' \
+--header 'X-API-USER: dev' \
+--header 'X-API-PASS: dev'
+```
+
+You should see a response like this:
+
+```json
+{"status":200,"data":{"message":"Welcome to MercuryBot 1.0.0","version":"cardano-cli 1.27.0 - linux-x86_64 - ghc-8.10","build":"git rev 8fe46140a52810b6ca456be01d652ca08fe730bf"}}
+```
+
 ### 5) Available Make Commands
 
 * `up` Turn on / restart the application
