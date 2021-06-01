@@ -1,0 +1,18 @@
+version: "3.5"
+services:
+
+  mercury-bot-test:
+    image: cardanomercurybot/api
+    container_name: mercury-bot-test
+    security_opt:
+      - no-new-privileges
+    restart: unless-stopped
+    tty: true
+    volumes:
+      - ./private:/home/mercury/app/private
+      - ./ssl:/home/mercury/ssl
+    ports: [ "443:443" ]
+    environment:
+      API_USER: dev
+      API_PASS: dev
+      NETWORK: testnet
