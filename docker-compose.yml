@@ -1,9 +1,9 @@
 version: "3.5"
 services:
 
-  mercury-bot-test:
+  mercury-bot:
     image: cardanomercurybot/api
-    container_name: mercury-bot-test
+    container_name: mercury-bot
     security_opt:
       - no-new-privileges
     restart: unless-stopped

@@ -20,7 +20,7 @@ status:
 
 .PHONY: stats
 stats:
-	docker stats mercury-bot-test
+	docker stats mercury-bot
 
 .PHONY: logs
 logs:
@@ -28,7 +28,7 @@ logs:
 
 .PHONY: shell
 shell:
-	docker exec -it mercury-bot-test bash
+	docker exec -it mercury-bot bash
 
 .PHONY: install
 install:

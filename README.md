@@ -21,6 +21,8 @@ apt-get install wget unzip make -y
 
 Lastly setup ssh public key authentication by following this guide: https://serverpilot.io/docs/how-to-use-ssh-public-key-authentication and then login as `mercury` newly created user on your VPS to continue
 
+Login as `mercury` (newly setup user) and continue with the remaining steps
+
 ### 2) Download Deployment Files
 
 ```shell
@@ -62,3 +64,15 @@ make up
 ```
 
 Mercury bot will be running on: https://your-server-ip
+
+### 5) Available Make Commands
+
+* `up` Turn on the application
+* `down` Turn off the application
+* `upgrade` Download the latest version & restart the application
+* `status` View the status of the running application
+* `stats` View the resource usage (CPU, RAM, IO etc...) by the application
+* `logs` View application logs
+* `shell` Drop into running application's container shell
+* `install` Installs docker
+* `ssl` Generates new apache self-signed certificates
