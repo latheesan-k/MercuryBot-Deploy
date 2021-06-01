@@ -1,6 +1,15 @@
 # Deploy MercuryBot to VPS Instance
 
-Instructions for Ubuntu. You must **copy & paste the entire command blocks** below, not one line at a time.
+### Minimum Server Requirement
+
+```
+* OS: Ubuntu
+* RAM: 256 MB
+* CPU: 1 Core
+* DISK: 8 GB
+```
+
+Instructions for **Ubuntu**. You must **copy & paste the entire command blocks** below when running the commands, not one line at a time.
 
 ### 1) VPS Preparation
 
@@ -19,9 +28,9 @@ Next, we'll install required initial tools:
 apt-get install wget unzip make -y
 ```
 
-Lastly setup ssh public key authentication by following this guide: https://serverpilot.io/docs/how-to-use-ssh-public-key-authentication and then login as `mercury` newly created user on your VPS to continue
+Lastly setup ssh public key authentication by following this guide: https://serverpilot.io/docs/how-to-use-ssh-public-key-authentication
 
-Login as `mercury` (newly setup user) and continue with the remaining steps
+Login as `mercury` (newly setup user) and continue with the remaining steps below.
 
 ### 2) Download Deployment Files
 
